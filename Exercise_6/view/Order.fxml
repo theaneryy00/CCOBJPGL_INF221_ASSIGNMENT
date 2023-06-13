@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="312.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.OrderController">
+   <children>
+      <ImageView fitHeight="94.0" fitWidth="312.0">
+         <image>
+            <Image url="@../../../../../../Downloads/ikea.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="136.0" layoutY="107.0" text="Receipt" />
+      <Label fx:id="name1" layoutX="44.0" layoutY="140.0" text="label" visible="false" />
+      <Label fx:id="qty1" layoutX="143.0" layoutY="140.0" text="label" visible="false" />
+      <Label fx:id="lineAmount1" layoutX="236.0" layoutY="140.0" text="label" visible="false" />
+      <Label fx:id="name2" layoutX="44.0" layoutY="182.0" text="label" visible="false" />
+      <Label fx:id="name3" layoutX="44.0" layoutY="225.0" text="label" visible="false" />
+      <Label fx:id="qty2" layoutX="143.0" layoutY="182.0" text="label" visible="false" />
+      <Label fx:id="qty3" layoutX="143.0" layoutY="225.0" text="label" visible="false" />
+      <Label fx:id="lineAmount2" layoutX="235.0" layoutY="182.0" text="label" visible="false" />
+      <Label fx:id="lineAmount3" layoutX="235.0" layoutY="225.0" text="label" visible="false" />
+      <Label layoutX="44.0" layoutY="287.0" prefHeight="24.0" prefWidth="40.0" text="Total:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Total" layoutX="231.0" layoutY="287.0" text="label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
