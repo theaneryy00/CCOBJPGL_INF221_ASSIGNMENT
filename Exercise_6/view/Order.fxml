@@ -4,35 +4,116 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="312.0" style="-fx-background-color: #ffff00;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.OrderController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
    <children>
-      <ImageView fitHeight="94.0" fitWidth="312.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffea00" height="562.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <ImageView fitHeight="108.0" fitWidth="101.0" layoutX="158.0" layoutY="-11.0">
          <image>
-            <Image url="@../../../../../../Downloads/ikea.png" />
+            <Image url="@../images/ikea_receipt.png" />
          </image>
       </ImageView>
-      <Label layoutX="136.0" layoutY="107.0" text="Receipt" />
-      <Label fx:id="name1" layoutX="44.0" layoutY="140.0" text="label" visible="false" />
-      <Label fx:id="qty1" layoutX="143.0" layoutY="140.0" text="label" visible="false" />
-      <Label fx:id="lineAmount1" layoutX="236.0" layoutY="140.0" text="label" visible="false" />
-      <Label fx:id="name2" layoutX="44.0" layoutY="182.0" text="label" visible="false" />
-      <Label fx:id="name3" layoutX="44.0" layoutY="225.0" text="label" visible="false" />
-      <Label fx:id="qty2" layoutX="143.0" layoutY="182.0" text="label" visible="false" />
-      <Label fx:id="qty3" layoutX="143.0" layoutY="225.0" text="label" visible="false" />
-      <Label fx:id="lineAmount2" layoutX="235.0" layoutY="182.0" text="label" visible="false" />
-      <Label fx:id="lineAmount3" layoutX="235.0" layoutY="225.0" text="label" visible="false" />
-      <Label layoutX="44.0" layoutY="287.0" prefHeight="24.0" prefWidth="40.0" text="Total:">
+      <Text layoutX="236.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
          <font>
-            <Font size="14.0" />
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="319.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity  Item Name">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="qty1" layoutX="32.0" layoutY="207.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font></Label>
+      <Label fx:id="product1" layoutX="88.0" layoutY="207.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="Total" layoutX="231.0" layoutY="287.0" text="label">
+      <Label fx:id="price1" layoutX="236.0" layoutY="207.0">
          <font>
-            <Font size="14.0" />
+            <Font name="Monospaced Regular" size="14.0" />
          </font>
       </Label>
+      <Label fx:id="amount1" layoutX="319.0" layoutY="207.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="qty2" layoutX="32.0" layoutY="235.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="qty3" layoutX="32.0" layoutY="263.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="product2" layoutX="88.0" layoutY="235.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="product3" layoutX="88.0" layoutY="263.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="price2" layoutX="236.0" layoutY="235.0" prefHeight="7.0" prefWidth="37.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="price3" layoutX="236.0" layoutY="263.0" prefHeight="7.0" prefWidth="37.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount2" layoutX="319.0" layoutY="235.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount3" layoutX="319.0" layoutY="263.0">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="117.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total amount to pay:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="total" layoutX="319.0" layoutY="308.0">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="157.0" fitWidth="400.0" layoutY="-1.0">
+         <image>
+            <Image url="@../images/ikea.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="117.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank You for Shopping with us!">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="204.0" fitWidth="312.0" layoutX="44.0" layoutY="302.0">
+         <image>
+            <Image url="@../../../../../../Downloads/—Pngtree—black%20and%20white%20icons%20of_7554658.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
